@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book an Appointment</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f5f2;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    color: #C8102E;
+    text-align: center;
+  }
+
+  p.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  /* Quick booking options */
+  .quick-book {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .quick-book a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .whatsapp {
+    background-color: #25D366;
+  }
+
+  .whatsapp:hover {
+    background-color: #1ebc59;
+  }
+
+  .fresha {
+    background-color: #C8102E;
+  }
+
+  .fresha:hover {
+    background-color: #a50d26;
+  }
+
+  /* Booking form */
+  form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    background-color: #C8102E;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #a50d26;
+  }
+
+  .note {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin-top: 15px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Book an Appointment</h1>
+  <p class="subtitle">Eric Kayz Barbershop — You will feel like a celebrity</p>
+
+  <div class="container">
+
+    <!-- Quick booking buttons -->
+    <div class="quick-book">
+      <a class="whatsapp" href="https://wa.me/27713004435">Book via WhatsApp</a>
+      <a class="fresha" href="https://www.fresha.com/a/eric-kayz-barbershop-johannesburg-15-8th-street-qdzk8bu2">Book via Fresha</a>
+    </div>
+
+    <!-- Booking request form -->
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="071 234 5678" required>
+
+      <label for="service">Service</label>
+      <select id="service" name="service">
+        <option>Adult Haircut</option>
+        <option>Children's Haircut</option>
+        <option>Shave</option>
+        <option>Shave and Lining</option>
+        <option>S-Curl and Cut</option>
+        <option>Massage</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <button type="submit">Request Booking</button>
+    </form>
+
+    <p class="note">This form doesn't send automatically yet — for instant confirmation, book via WhatsApp or Fresha above.</p>
+  </div>
+
+</body>
+</html>
